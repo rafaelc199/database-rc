@@ -1,0 +1,25 @@
+workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Escolha a Nuvem'
+        required: true
+        default: 'aws'
+        type: choice
+        options:
+          - aws
+          - azure
+          - google
+          - oracle
+      descricao:
+        description: 'Descricao'   
+        required: true
+        type: string
+ 
+      logico:
+        description: 'Sim ou Nao - hhfhfh'   
+        required: true
+        type: boolean
+ 
+      ambiente:
+        description: 'Qual o ambiente de trabalho'   
+        required: true
